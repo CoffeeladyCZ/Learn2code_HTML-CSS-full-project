@@ -1,0 +1,239 @@
+/* general */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #323232;
+    background-color: #eeefed;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container:before,
+.group:before,
+.menu:before,
+.container:after,
+.group:after,
+.menu:after {
+    content: " ";
+    display: table;
+}
+
+.container:after,
+.group:after,
+.menu:after {
+    clear: both;
+}
+
+.container,
+.group, 
+.menu {
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+strong {
+    font-weight: 600;
+}
+.menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.fa {
+    vertical-align: middle;
+}
+.menu li {
+    float: left;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* navigace */
+.contact-bar,
+.personal a {
+    color: #ffffff;
+}
+.contact-bar {
+    background:  #3389b1;
+    height: 84px;
+    
+    font-size: 14px;
+}
+.personal {
+    float: left;
+    margin: 30px;
+}
+.social {
+    float: right;
+    margin: 10px;
+    margin-top: 18px;
+}
+.personal li {
+    margin-right: 70px;
+}
+.personal .fa {
+    font-size: 28px;
+    margin-right: 10px;
+}
+.social .fa {
+    font-size: 17px;
+}
+.social-icon {
+    display: block;
+    height: 48px;
+    width: 48px;
+    line-height: 58px;
+    margin-right: 2px;
+    color: #989898;
+    background-color: #eeefed;
+    text-align: center;
+    border-radius: 4px;
+}
+.social-icon:hover,
+.social-icon:focus {
+    color: #eeefed;
+    background: #5bd0ec;
+}
+
+/* kontakt */
+.nav-bar {
+    background-color: #f2f2f2;
+    clear: both;
+
+}
+.logo {
+    float: left;
+    width: 440px;
+    height: 150px;
+}
+.logo a {
+    display: block;
+    background: url('../img/icon-2486501_640.png') 0 0 no-repeat;
+    width: 440px;
+    height: 109px;
+    text-indent: -99999px;
+    margin-left: 0;
+}
+.navigace {
+    float: right;
+   
+}
+.navigation .fa {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.navigation a {
+    color: #a6a6a6;
+    display: block;
+    width: 136px;
+    height: 120px;
+    text-align: center;
+}
+.navigation li {
+    border-left: 1px solid #cecece;
+}
+.navigation li:last-child {
+    border-right: 1px solid #cecece;;
+}
+.selected, 
+.navigation a:hover,
+.navigation a:focus {
+    color: #de5748;
+}
+
+/*ARTICLE*/
+.text-center {
+    text-align: center;
+}
+.post-header {
+    height: 160px;
+    background: url('../img/adventure/blueberries-690072_1920.jpg') center -274px no-repeat;
+}
+.post-title {
+    color: #fff;
+    font-style: 45px;
+    font-weight: 600;
+    background:  #3389b1;
+    padding: 18px 46px;
+    border-radius: 7px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 48px;
+    letter-spacing: 1px;
+}
+.post-content h2 {
+    color: #323232;
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+.post-content {
+    padding-bottom: 100px;
+}
+.menu-controls {
+    width: 642px;
+    margin: 50px auto;
+    text-align: center;
+}
+.controls {
+    list-style: none;
+    display: inline;
+    
+}
+.contr {
+    padding: 10px 20px;
+    background: #3389b1;
+    color: #ffffff;
+    margin-right: 10px;
+    border-radius: 7px;   
+}
+.contr:hover {
+    color: #3389b1;
+    background: #fff;
+}
+.gallery {
+    font-size: 0;
+    text-align: center;
+}
+img {
+    width: 400px;
+    height: 200px;
+}
+
+/*pre-footer*/
+.pre-footer {
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+    background: rgb(65, 63, 63);
+    height: 200px;
+}
+
+.foot {
+    text-align: center;
+    
+}
+.foot a {
+    color: #fff;
+}
+.foot li {
+    margin-right: 70px;
+    display: inline-block;
+}
+.foot .fa {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+/* FOOTER*/
+footer {
+    height: 50px;
+    color: #323232;
+    background-color: #eeefed;
+    font-size: 18px;
+    text-align: center;
+}
