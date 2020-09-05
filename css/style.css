@@ -104,19 +104,36 @@ strong {
     clear: both;
 
 }
+/* logo */
 .logo {
     float: left;
-    width: 440px;
-    height: 150px;
+    width: 300px;
+    height: 100px;
+    
+
 }
-.logo a {
+.header-logo {
+    margin-top: 27px;
+    border: #3389b1 solid 5px;
+    
+}
+.header-logo h1 {
+    margin: 0;
+    color: #3389b1;
+    padding: 10px 5px 2px 40px;
+    text-align: end;
+}
+
+/*.logo a {
     display: block;
     background: url('../img/icon-2486501_640.png') 0 0 no-repeat;
     width: 440px;
     height: 109px;
     text-indent: -99999px;
     margin-left: 0;
-}
+} */
+
+/* navigace */
 .navigace {
     float: right;
    
@@ -155,9 +172,9 @@ strong {
 }
 .post-title {
     color: #fff;
-    font-style: 45px;
+    font-size: 30px;
     font-weight: 600;
-    background:  #3389b1;
+    background:  #7aaec981;
     padding: 18px 46px;
     border-radius: 7px;
     display: inline-block;
@@ -166,6 +183,7 @@ strong {
     letter-spacing: 1px;
 }
 .post-content h2 {
+    margin-top: 35px;
     color: #323232;
     font-weight: 400;
     font-size: 30px;
@@ -176,7 +194,7 @@ strong {
 }
 .menu-controls {
     width: 642px;
-    margin: 50px auto;
+    margin: 50px auto 10px auto;
     text-align: center;
 }
 .controls {
@@ -201,7 +219,7 @@ strong {
 }
 img {
     width: 400px;
-    height: 200px;
+    height: 250px;
 }
 
 /*pre-footer*/
