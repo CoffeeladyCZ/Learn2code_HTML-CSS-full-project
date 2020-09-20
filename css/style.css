@@ -1,10 +1,17 @@
 /* general */
-
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
     color: #323232;
     background-color: #eeefed;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 .container:before,
@@ -28,6 +35,10 @@ body {
 .menu {
     *zoom: 1;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 a {
     text-decoration: none;
@@ -47,8 +58,9 @@ strong {
     float: left;
 }
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 1.25em;
 }
 
 /* navigace */
@@ -58,39 +70,39 @@ strong {
 }
 .contact-bar {
     background:  #3389b1;
-    height: 84px;
+    height: 5.250em; /* 84/16 */
     
-    font-size: 14px;
+    font-size: 0.875em; /* 14/16 */
 }
 .personal {
     float: left;
-    margin: 30px;
+    margin: 1.875em; /* 30/16*/
 }
 .social {
     float: right;
-    margin: 10px;
-    margin-top: 18px;
+    margin: 0.625em; /* 10/16 */
+    margin-top: 1.125em; /* 18/16 */
 }
 .personal li {
-    margin-right: 70px;
+    margin-right: 4.375em; /* 70/16 */
 }
 .personal .fa {
-    font-size: 28px;
-    margin-right: 10px;
+    font-size: 1.750em; /* 28/16 */
+    margin-right: 0.625em; /* 10/16 */
 }
 .social .fa {
-    font-size: 17px;
+    font-size: 1.063em; /* 17/16 */
 }
 .social-icon {
     display: block;
-    height: 48px;
-    width: 48px;
-    line-height: 58px;
-    margin-right: 2px;
+    height: 3.000em; /* 48/16 */
+    width: 3.000em; /* 48/16 */
+    line-height: 3.625em; /* 58/16 */
+    margin-right: 0.125em; /* 2/16 */
     color: #989898;
     background-color: #eeefed;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0.250em; /* 4/16 */
 }
 .social-icon:hover,
 .social-icon:focus {
@@ -107,14 +119,14 @@ strong {
 /* logo */
 .logo {
     float: left;
-    width: 300px;
-    height: 100px;
+    width: 18.750em; /* 300/16 */
+    height: 6.250em; /* 100/16 */
     
 
 }
 .header-logo {
-    margin-top: 27px;
-    border: #3389b1 solid 5px;
+    margin-top: 1.688em; /* 27/16 */
+    border: #3389b1 solid 0.313em; /* 5/16 */
     
 }
 .header-logo h1 {
@@ -124,30 +136,24 @@ strong {
     text-align: end;
 }
 
-/*.logo a {
-    display: block;
-    background: url('../img/icon-2486501_640.png') 0 0 no-repeat;
-    width: 440px;
-    height: 109px;
-    text-indent: -99999px;
-    margin-left: 0;
-} */
-
 /* navigace */
+.nav-bar {
+    height: auto; /*9.5em*/
+}
 .navigace {
     float: right;
    
 }
 .navigation .fa {
     display: block;
-    padding-bottom: 10px;
-    padding-top: 30px;
+    padding-bottom: 0.625em; /* 10/16 */
+    padding-top: 1.875em; /* 30/16 */
 }
 .navigation a {
     color: #a6a6a6;
     display: block;
-    width: 136px;
-    height: 120px;
+    width: 8.500em; /* 136/16*/
+    height: 7.500em; /* 120/16 */
     text-align: center;
 }
 .navigation li {
@@ -161,39 +167,43 @@ strong {
 .navigation a:focus {
     color: #de5748;
 }
+.selected {
+    height: 7.813em; /* 125/16 */
+    margin-bottom: 1.250em; /* 20/16 */
+}
 
 /*ARTICLE*/
 .text-center {
     text-align: center;
 }
 .post-header {
-    height: 160px;
-    background: url('../img/adventure/blueberries-690072_1920.jpg') center -274px no-repeat;
+    height: 10.000em; /* 160/16*/
+    background: url('../img/adventure/blueberries-690072_1920.jpg') center -17.125em no-repeat; /* 274/16*/
 }
 .post-title {
     color: #fff;
-    font-size: 30px;
+    font-size: 1.875em; /* 30/16 */
     font-weight: 600;
     background:  #7aaec981;
-    padding: 18px 46px;
+    padding: 1.125em 2.875em; /* 18 46*/
     border-radius: 7px;
     display: inline-block;
     text-transform: uppercase;
-    margin-top: 48px;
-    letter-spacing: 1px;
+    margin-top: 1.000em; 
+    letter-spacing: 0.063em; /* 1/16 */
 }
 .post-content h2 {
-    margin-top: 35px;
+    margin-top: 2.188em; /* 35/16*/
     color: #323232;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875em; /* 30/16 */
     
 }
 .post-content {
-    padding-bottom: 100px;
+    padding-bottom: 6.250em; /* 100/16 */
 }
 .menu-controls {
-    width: 642px;
+    width: 40.125em; /* 642/16 */
     margin: 50px auto 10px auto;
     text-align: center;
 }
@@ -224,34 +234,35 @@ img {
 
 /*pre-footer*/
 .pre-footer {
-    padding-top: 30px;
+    padding-top: 1.875em; /* 30/16 */
     text-align: center;
     color: #fff;
     background: rgb(65, 63, 63);
-    height: 200px;
+    height: 12.500em; /* 200/16 */
 }
 
 .foot {
     text-align: center;
+    margin-top: 1.563em;
     
 }
 .foot a {
     color: #fff;
 }
 .foot li {
-    margin-right: 70px;
+    margin-right: 4.375em; /* 70/16 */
     display: inline-block;
 }
 .foot .fa {
-    font-size: 28px;
+    font-size: 1.750em; /* 28/16 */
     margin-right: 10px;
 }
 
 /* FOOTER*/
 footer {
-    height: 50px;
+    height: 3.125em; /* 50/16 */
     color: #323232;
     background-color: #eeefed;
-    font-size: 18px;
+    font-size: 1.125em; /* 18/16 */
     text-align: center;
 }
